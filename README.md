@@ -6,7 +6,7 @@ The project runs on ROS 2 Jazzy and combines Gazebo Sim, `gz_ros2_control`, Move
 
 ## Demo
 
-![Panda color-sorting demonstration](./src/gif/panda_color_sorting_demo-ezgif.com-video-to-gif-converter.gif)
+Updated demonstration coming soon.
 
 ## Features
 
