@@ -1,24 +1,85 @@
-# Panda Color Sorting with ROS 2 and Python
+<p align="center">
 
-A vision-guided pick-and-place simulation in which a Franka Emika Panda robot detects red, green, and blue boxes, picks each box using MoveIt 2, and places it in the matching container.
+![ROS 2](https://img.shields.io/badge/ROS%202-Jazzy-22314E?style=flat-square&logo=ros)
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white)
+![Gazebo](https://img.shields.io/badge/Gazebo-Harmonic-orange?style=flat-square)
+![MoveIt 2](https://img.shields.io/badge/MoveIt%202-Motion%20Planning-blue?style=flat-square)
+![OpenCV](https://img.shields.io/badge/OpenCV-Vision-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![TF2](https://img.shields.io/badge/TF2-Transforms-green?style=flat-square)
+![ros2_control](https://img.shields.io/badge/ros2__control-Control-red?style=flat-square)
+![Robot](https://img.shields.io/badge/Robot-Franka%20Panda-purple?style=flat-square)
+![Last Commit](https://img.shields.io/github/last-commit/ruddrho/panda-color-sorting-ros2-python?style=flat-square)
+![Repo Size](https://img.shields.io/github/repo-size/ruddrho/panda-color-sorting-ros2-python?style=flat-square)
 
-The project runs on ROS 2 Jazzy and combines Gazebo Sim, `gz_ros2_control`, MoveIt 2, RViz, OpenCV, TF2, and Python.
+</p>
+
+<h1 align="center">
+Panda Color Sorting with ROS 2 and Python
+</h1>
+
+<p align="center">
+  <img
+    src="https://github.com/ruddrho/panda-color-sorting-ros2-python/blob/main/panda_color_sorting_ros2_gazebo%20(1).gif?raw=true"
+    width="900"
+    alt="Franka Panda ROS 2 Vision-Guided Color Sorting Simulation">
+</p>
+
+<p align="center">
+<b>Vision-Guided Pick-and-Place Color Sorting using ROS 2, MoveIt 2, Gazebo, OpenCV, and Python</b>
+</p>
+
+---
+
+## Overview
+
+A vision-guided pick-and-place simulation in which a **Franka Emika Panda robot** detects red, green, and blue boxes, picks each box using **MoveIt 2**, and places it in the matching container.
+
+The project runs on **ROS 2 Jazzy** and combines **Gazebo Sim, `gz_ros2_control`, MoveIt 2, RViz, OpenCV, TF2, and Python** to create an autonomous robotic color-sorting workflow.
+
+---
 
 ## Demo
 
-Updated demonstration coming soon.
+<p align="center">
+  <img
+    src="https://github.com/ruddrho/panda-color-sorting-ros2-python/blob/main/panda_color_sorting_ros2_gazebo%20(1).gif?raw=true"
+    width="900"
+    alt="Panda Robot Color Sorting Demo">
+</p>
+
+<p align="center">
+<b>ROS 2 vision-guided Franka Panda pick-and-place color sorting simulation.</b>
+</p>
+
+The demonstration shows the complete workflow:
+
+- Detect colored boxes
+- Identify red, green, and blue objects
+- Determine object coordinates
+- Plan robot-arm motion using MoveIt 2
+- Pick the detected object
+- Move the object to the corresponding container
+- Release the object
+- Continue sorting the remaining objects
+
+---
 
 ## Features
 
 - RGB-camera-based detection of red, green, and blue boxes
-- HSV segmentation and contour detection with OpenCV
+- HSV color segmentation and contour detection using OpenCV
 - Camera-to-`panda_link0` coordinate transformation with TF2
-- MoveIt 2 motion planning for the Panda arm
-- ROS 2 controllers for the arm and gripper
+- MoveIt 2 motion planning for the Franka Panda arm
+- ROS 2 controllers for both arm and gripper
+- Vision-guided autonomous pick-and-place
 - Single-color pick-and-place mode
 - Automatic red → green → blue sorting mode
-- Industrial Gazebo environment with graphite worktables, warehouse racks, storage cartons, a workbench, a factory wall, a wall-mounted fan, and safety markings
-- Neutral environment colours selected to avoid interfering with RGB object detection
+- Separate arm and gripper control
+- Gazebo Harmonic simulation with `gz_ros2_control`
+- RViz visualization for robot state and motion planning
+- Industrial Gazebo environment with graphite worktables, warehouse racks, storage cartons, a workbench, factory wall elements, a wall-mounted fan, and safety markings
+- Neutral environment colors selected to minimize interference with RGB object detection
+- Complete ROS 2 Jazzy, Python, OpenCV, TF2, MoveIt 2, and Gazebo integration
 
 ## System Flow
 
