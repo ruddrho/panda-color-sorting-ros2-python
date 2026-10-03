@@ -19,7 +19,7 @@ Panda Color Sorting with ROS 2 and Python
 
 <p align="center">
   <img
-    src="https://github.com/ruddrho/panda-color-sorting-ros2-python/blob/main/panda_color_sorting_ros2_gazebo%20(1).gif?raw=true"
+    src="https://github.com/ruddrho/panda-color-sorting-ros2-python/blob/main/panda_color_sorting_ros2_gazebo.gif.gif?raw=true"
     width="900"
     alt="Franka Panda ROS 2 Vision-Guided Color Sorting Simulation">
 </p>
